@@ -2,7 +2,15 @@
 <body>
   <title>Testing page</title>
   <head>
-    
+    <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "323281b1-8465-4c50-8626-103fff077209",
+    });
+  });
+</script>
   </head>
 
 <p>This is a paragraph.</p>
